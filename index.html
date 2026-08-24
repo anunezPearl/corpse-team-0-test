@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Synonym Finder</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 60px auto; text-align: center; }
+    input { font-size: 1.2rem; padding: 8px; }
+    button { font-size: 1.2rem; padding: 8px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Synonym Finder</h1>
+  <p>Type a word to find synonyms.</p>
+  <input id="wordInput" type="text" placeholder="Enter a word" />
+  <button onclick="findSynonyms()">Find Synonyms</button>
+  <div id="results"></div>
+
+  <script>
+    function findSynonyms() {
+      const val = document.getElementById('wordInput').value;
+      document.getElementById('results').innerText = "Synonyms for: " + val;
+      // Nothing here yet — build me! Could use a hardcoded list or a free thesaurus API.
+    }
+  </script>
+</body>
+</html>
